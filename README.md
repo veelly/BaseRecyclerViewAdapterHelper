@@ -1,32 +1,40 @@
-[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-BaseRecyclerViewAdapterHelper-green.svg?style=true)](https://android-arsenal.com/details/1/3644)
-[![](https://jitpack.io/v/CymChad/BaseRecyclerViewAdapterHelper.svg)](https://jitpack.io/#CymChad/BaseRecyclerViewAdapterHelper)  
+![](https://user-images.githubusercontent.com/7698209/33198075-ef8f2230-d123-11e7-85a3-4cb9b22f877d.png)
+[![](https://jitpack.io/v/CymChad/BaseRecyclerViewAdapterHelper.svg)](https://jitpack.io/#CymChad/BaseRecyclerViewAdapterHelper)![](https://travis-ci.org/CymChad/BaseRecyclerViewAdapterHelper.svg?branch=master)[![API](https://img.shields.io/badge/API-14%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=14)[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-BaseRecyclerViewAdapterHelper-green.svg?style=true)](https://android-arsenal.com/details/1/3644)[![CircleCI](https://circleci.com/gh/CymChad/BaseRecyclerViewAdapterHelper/tree/master.svg?style=svg)](https://circleci.com/gh/CymChad/BaseRecyclerViewAdapterHelper/tree/master)[![Codacy Badge](https://api.codacy.com/project/badge/Grade/2302d0084d0048eaa0f9bac4350837a0)](https://www.codacy.com/app/CymChad/BaseRecyclerViewAdapterHelper?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=CymChad/BaseRecyclerViewAdapterHelper&amp;utm_campaign=Badge_Grade)[![](https://img.shields.io/badge/%E4%BD%9C%E8%80%85-%E9%99%88%E5%AE%87%E6%98%8E-7AD6FD.svg)](http://www.jianshu.com/u/f958e66439f0)  
+# BRVAH
+http://www.recyclerview.org/  
 Powerful and flexible RecyclerAdapter,
-Please feel free to use this. (Welcome to **Star** and **Fork**)
-![](https://cloud.githubusercontent.com/assets/7698209/21709381/923fdd64-d41b-11e6-8298-9bd1e427d636.png)
+Please feel free to use this. (Welcome to **Star** and **Fork**)  
+
+kotlin demo :[BRVAH_kotlin](https://github.com/AllenCoder/BRVAH_kotlin)
+# Document
+- [English](https://github.com/CymChad/BaseRecyclerViewAdapterHelper/wiki)
+- [中文](http://www.jianshu.com/p/b343fcff51b0)  
+
 ## [UI](https://github.com/CymChad/BaseRecyclerViewAdapterHelper/issues/694)
 ## Demo
 
 [![Get it on Google Play](https://developer.android.com/images/brand/en_generic_rgb_wo_60.png)](https://play.google.com/store/apps/details?id=com.chad.baserecyclerviewadapterhelper)
 
 [国内下载地址](https://fir.im/s91g)  
-# Document
-- [English](https://github.com/CymChad/BaseRecyclerViewAdapterHelper/wiki)
-- [中文](https://github.com/CymChad/BaseRecyclerViewAdapterHelper/wiki/%E9%A6%96%E9%A1%B5)  
-   - [BRVAH源码分析：BaseViewHolder、BaseQuickAdapter之生命周期、预加载实现、上拉加载实现](http://url.cn/45xnhTW)    
-    - [BRVAH源码分析：分组、多布局、折叠](http://url.cn/46Va4jy)  
 
 # proguard-rules.pro
 ```
 -keep class com.chad.library.adapter.** {
-   *;
+*;
+}
+-keep public class * extends com.chad.library.adapter.base.BaseQuickAdapter
+-keep public class * extends com.chad.library.adapter.base.BaseViewHolder
+-keepclassmembers  class **$** extends com.chad.library.adapter.base.BaseViewHolder {
+     <init>(...);
 }
 ```
 
 # Extension library
 [PinnedSectionItemDecoration](https://github.com/oubowu/PinnedSectionItemDecoration)  
-[EasyRefreshLayout](https://github.com/anzaizai/EasyRefreshLayout)
+[EasyRefreshLayout](https://github.com/anzaizai/EasyRefreshLayout)  
+[EasySwipeMenuLayout](https://github.com/anzaizai/EasySwipeMenuLayout)
 
-# Thanks
+# Thanks  
 [JoanZapata / base-adapter-helper](https://github.com/JoanZapata/base-adapter-helper)
 
 # License
@@ -45,3 +53,5 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 ```
+# 推荐
+![](https://user-images.githubusercontent.com/7698209/33198309-4908849a-d125-11e7-80eb-a80c64d61c77.jpeg)
